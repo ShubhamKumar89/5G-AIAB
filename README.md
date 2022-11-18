@@ -1,6 +1,6 @@
 # 5G AiaB
 
-Deploying Aether's 5G SD-CORE with ROC using Helm Charts.
+Deploying Aether's 5G SD-CORE with ROC using Helm Charts. [Official Documentation](https://docs.aetherproject.org/master/developer/aiab.html#installing-the-5g-aiab)
 
 ## Overview
 
@@ -18,7 +18,7 @@ SD-CORE configuration can be done with or without the ROC. But the main purpose 
 
 * Haswell CPU or newer.
 
-* At least 4 CPUs and 12GB RAM.
+* At least `4 CPUs` and `12GB RAM`.
 
 * Ability to run `sudo` without a password. Due to this requirement, AiaB is most suited to disposable environments like a VM or a CloudLab machine.
 
@@ -134,7 +134,7 @@ The ROC GUI is available on `port:31194` on the host running AiaB.<br>
 ![image](https://user-images.githubusercontent.com/97805339/202686731-033288e2-89ca-4b44-82d3-5c06bcf2eddf.png)
 
 
-AiaB dashboard for 5G is not supported till now. But, 4G AiaB dashboard is available on `port:30950` on the host running 4G AiaB after running 
+AiaB dashboard for 5G is not supported till now. But, 4G AiaB dashboard is available on `port:30950` on the host running 4G AiaB after running:
 
 ```bash
 make monitoring-4g
