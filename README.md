@@ -131,6 +131,9 @@ kubectl get pods -A
 The ROC GUI is available on `port:31194` on the host running AiaB.<br>
 *e.g.* **192.168.5.191:31194**
 
+![image](https://user-images.githubusercontent.com/97805339/202686731-033288e2-89ca-4b44-82d3-5c06bcf2eddf.png)
+
+
 AiaB dashboard for 5G is not supported till now. But, 4G AiaB dashboard is available on `port:30950` on the host running 4G AiaB after running 
 
 ```bash
