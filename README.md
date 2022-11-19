@@ -24,38 +24,11 @@ SD-CORE configuration can be done with or without the ROC. But the main purpose 
 
 * No firewall running on the AiaB host. For example, `sudo ufw status` should show **inactive**, and `sudo iptables -L` and `sudo nft list` should show a blank configuration.
 
-* Install `make`.
+* Install Dependencies(`make`, `docker`, `kind`, `kubectl`, `kubelet`, `helm`):
 
 ```bash
-sudo apt install -y make
-```
-
-* Install any cluster, uses `kind` in this installation. 
-
-```bash
-curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64
-sudo chmod +x ./kind
-sudo mv ./kind /usr/local/bin/kind
-```
-
-* Install `kubectl` and `kubelet`.
-
-```bash
-sudo apt-get update
-sudo apt-get install -y apt-transport-https ca-certificates curl
-sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-sudo apt-get update 
-sudo apt-get install -y kubelet=1.21.14-00 kubectl=1.21.14-00
-sudo apt-mark hold kubelet kubectl
-```
-
-* Install helm(`helmv3`).
-
-```bash
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
-chmod 700 get_helm.sh
-./get_helm.sh
+chmod 777 pre-requisite.sh
+./pre-requisite.sh
 ```
 
 ## Installation
