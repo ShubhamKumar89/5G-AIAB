@@ -27,8 +27,8 @@ SD-CORE configuration can be done with or without the ROC. But the main purpose 
 * Install Dependencies(`make`, `docker`, `kind`, `kubectl`, `kubelet`, `helm`):
 
 ```bash
-chmod 777 pre-requisite.sh
-./pre-requisite.sh
+chmod 777 dependency.sh
+./dependency.sh
 ```
 
 ## Installation
