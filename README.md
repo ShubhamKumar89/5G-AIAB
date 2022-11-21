@@ -27,6 +27,8 @@ SD-CORE configuration can be done with or without the ROC. But the main purpose 
 * Install Dependencies(`make`, `docker`, `kind`, `kubectl`, `kubelet`, `helm`):
 
 ```bash
+git clone https://github.com/ShubhamKumar89/5G-AiaB
+cd 5G-AiaB/
 chmod 777 dependency.sh
 ./dependency.sh
 ```
