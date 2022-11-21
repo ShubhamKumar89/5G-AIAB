@@ -50,6 +50,8 @@ sudo -s
 kind create cluster
 ```
 
+Configure `sd-core-5g-values.yaml` file with the following values given in the [official documentation](https://docs.sd-core.opennetworking.org/master/deployment/deployment5G.html#cloud-native-configuration-5g).
+
 ### Installing the ROC for 5G using latest published charts
 
 ```bash
