@@ -22,7 +22,7 @@ SD-CORE configuration can be done with or without the ROC. But the main purpose 
 
 * Ability to run `sudo` without a password. Due to this requirement, AiaB is most suited to disposable environments like a VM or a CloudLab machine.
 
-* No firewall running on the AiaB host. For example, `sudo ufw status` should show **inactive**, and `sudo iptables -L` and `sudo nft list` should show a blank configuration.
+* No firewall running on the AiaB host. For example, `sudo ufw status` should show **inactive**, and `sudo iptables -L` should show a blank configuration.
 
 * Install Dependencies(`make`, `docker`, `kind`, `kubectl`, `kubelet`, `helm`):
 
@@ -46,6 +46,7 @@ cd aether-in-a-box/
 ### Start Cluster
 
 ```bash
+sudo -s
 kind create cluster
 ```
 
