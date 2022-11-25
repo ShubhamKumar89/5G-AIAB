@@ -116,13 +116,13 @@ After this step, Grafana is available at `http://<server-ip>:30950`. You will se
 
 ## Cleanup 5G AiaB
 
-* Clean up the 5G SD-CORE: 
+#### Clean up the 5G SD-CORE: 
 
 ```bash
 make reset-5g-test
 ```
 
-* Clean up the ROC: 
+#### Clean up the ROC: 
 
 ```bash
 make roc-clean
