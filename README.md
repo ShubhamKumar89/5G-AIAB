@@ -40,13 +40,6 @@ git clone "https://gerrit.opencord.org/aether-in-a-box"
 cd aether-in-a-box/
 ```
 
-### Start Cluster
-
-```bash
-sudo -s
-kind create cluster
-```
-
 Configure `sd-core-5g-values.yaml` file with the following values given in the [official documentation](https://docs.sd-core.opennetworking.org/master/deployment/deployment5G.html#cloud-native-configuration-5g).
 
 ### Installing the ROC for 5G using latest published charts
@@ -100,6 +93,8 @@ To change the behavior of the test run by gNBSim, change the contents of *gnb.co
 ```bash
 kubectl get pods -A
 ```
+
+![image](https://user-images.githubusercontent.com/97805339/203945823-efe55e98-5f8a-4671-9c21-7112989447bc.png)
 
 ## Access Dashboard
 
