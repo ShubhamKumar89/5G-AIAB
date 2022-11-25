@@ -24,13 +24,10 @@ SD-CORE configuration can be done with or without the ROC. But the main purpose 
 
 * No firewall running on the AiaB host. For example, `sudo ufw status` should show **inactive**, and `sudo iptables -L` should show a blank configuration.
 
-* Install Dependencies(`make`, `docker`, `kind`, `kubectl`, `kubelet`, `helm`):
+* Install `make`:
 
 ```bash
-git clone https://github.com/ShubhamKumar89/5G-AiaB
-cd 5G-AiaB/
-chmod 777 dependency.sh
-./dependency.sh
+sudo apt install -y make
 ```
 
 ## Installation
